@@ -4,6 +4,14 @@ wip
 
 ## dev
 
+### VSCode integration
+
+When opened in VSCode, the live server task will start automatically. (Nix required)
+
+Details: [`.vscode`](.vscode)
+
+### cmd
+
 To start the Emanote live server using Nix:
 
 ```sh
