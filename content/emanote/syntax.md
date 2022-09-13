@@ -42,8 +42,6 @@ Emanote でサポートされている拡張 MD のシンタックスについ�
 
 Wiki-Links のシンタックスの詳細は[ここ](https://github.com/EmaApps/emanote/blob/master/src/Emanote/Pandoc/Markdown/Syntax/WikiLink.hs)
 
-> 現状、普通の md のリンクのほうが機能は充実しているので無理に wiki-links を使う必要はない
-
 ### ページ一覧クエリ
 
 `````md

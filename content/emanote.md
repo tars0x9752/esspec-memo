@@ -1,4 +1,8 @@
-# Emanote
+---
+order: 999
+---
+
+# emanote
 
 [リポジトリ](https://github.com/EmaApps/emanote)
 
