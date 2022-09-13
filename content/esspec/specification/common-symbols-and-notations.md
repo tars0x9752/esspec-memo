@@ -55,3 +55,9 @@ Lists
 Record values
 
 [list-and-record-specification-type](https://tc39.es/ecma262/#sec-list-and-record-specification-type)
+
+## sans-serif typeface
+
+Enums
+
+[enum-specification-type](https://tc39.es/ecma262/#sec-enum-specification-type)
