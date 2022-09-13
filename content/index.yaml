@@ -1,0 +1,24 @@
+# For documentation and available settings, see
+# https://github.com/srid/emanote/blob/master/default/index.yaml
+
+page:
+  siteTitle: esspec-memo
+  headHtml: |
+    <snippet var="js.highlightjs" />
+    <snippet var="js.mermaid" />
+    <snippet var="js.mathjax" />
+
+template:
+  theme: blue
+
+  sidebar:
+    collapsed: false
+
+  urlStrategy: pretty
+
+  editBaseUrl: https://github.com/tars0x9752/esspec-memo/edit/main/content
+
+pandoc:
+  rewriteClass:
+    # ビルトインのスタイルから "transform -skew-y-1" を除去して上書き
+    sticky-note: px-3 py-1 rounded shadow bg-yellow-100 mx-2 scale-95 hover:scale-100 hover:border-yellow-400 hover:shadow-lg border-t-8 border-yellow-200 mb-8 mt-8

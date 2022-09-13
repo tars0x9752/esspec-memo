@@ -1,0 +1,19 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+		// ----- OPTIONAL -----
+		// "yzhang.markdown-all-in-one",
+		// "svsool.markdown-memo",
+		// "bierner.markdown-checkbox",
+		// "houkanshan.vscode-markdown-footnote",
+		// "bierner.emojisense",
+		// "mdickin.markdown-shortcuts",
+		// "mushan.vscode-paste-image",
+		// "sean10.markless-sean10",
+		// "gruntfuggly.todo-tree",
+
+		// ----- REQUIRED FOR THE "Emanote Live Server" TASK -----
+		"bbenoist.nix"
+	]
+}

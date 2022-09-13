@@ -1,0 +1,18 @@
+{
+  // Avoid having to explicitly save notes
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "editor.formatOnSave": true,
+  // Generally note files are not opened in duplicate tabs.
+  // This also enables you to navigate to already open note in other split pane
+  "workbench.editor.revealIfOpen": true,
+  "files.associations": {
+    "*.tpl": "html"
+  },
+  "search.exclude": {
+    ".direnv": true
+  }
+  // If use Git, these might be interesting:
+  // "git.autofetch": true,
+  // "git.postCommitCommand": "push"
+}
