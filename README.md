@@ -6,7 +6,7 @@ wip
 
 ### VSCode integration
 
-When opened in VSCode, the live server task will start automatically. (Nix required)
+When opened in VSCode, the live server task will start automatically. (Nix and Flakes feature required)
 
 More details: [`.vscode`](.vscode)
 
