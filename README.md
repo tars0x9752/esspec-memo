@@ -8,7 +8,7 @@ wip
 
 When opened in VSCode, the live server task will start automatically. (Nix required)
 
-Details: [`.vscode`](.vscode)
+More details: [`.vscode`](.vscode)
 
 ### cmd
 
@@ -16,6 +16,7 @@ To start the Emanote live server using Nix:
 
 ```sh
 # For VSCode, this is executed automatically by the live server task.
+# TIPS: It would be faster if you can use garnix cache: https://garnix.io/docs/caching
 nix run
 ```
 
