@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=77aa9165-7146-49e3-85b1-bd6b29d1093c' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=a66bb3f4-2f39-48df-b0d0-d178a7687c59' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -584,6 +584,15 @@
             </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/literature.html'>
+        <!-- DoNotFormat -->
+        #esspec/literature
+        <!-- DoNotFormat -->
+      </a>
     
   </section>
 
