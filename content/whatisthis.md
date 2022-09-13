@@ -4,4 +4,6 @@ order: 1
 
 # これは何
 
-- [ ] 書く
+[[esspec]] のメモ。
+
+[Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) っぽくするかもしれないし、しないかもしれない。
