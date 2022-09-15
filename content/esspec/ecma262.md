@@ -1,5 +1,5 @@
 ---
-tags: [esspec/literature]
+tags: [ecma262, tc39]
 ---
 
 # ecma262
