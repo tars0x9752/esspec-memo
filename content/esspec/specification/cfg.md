@@ -1,0 +1,38 @@
+---
+tags: [cfg, esspec/cfg, esspec/chain-production]
+---
+
+# Context-Free Grammars
+
+文脈自由文法
+
+例: 「数字とは 0, 1, 2, ..., のいずれかである」や「小数とは 符号, 数字の連続, 小数点, 数字の連続...」, のような文法の定義。その定義ひとつひとつを production (生成規則あるいは導出規則など) と呼ぶ。
+
+- 終端記号: それ以上分解できないもの。
+- 非終端記号: 非終端記号と終端記号の任意の組み合わせで定義されるもの。構文変数。
+
+### ecma262 and CFG
+
+ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の記述時に使われる。
+
+大きく分けて Syntactic Grammar, Numeric String Grammar, Lexical and RegExp Grammars の 3 種類存在する。(また, Runtime Semantics 記述時の [[sdo]] の定義中でその 3 種類が使われる可能性もある)
+
+**分割記号の違い**
+
+- Syntactic Grammar は `:`
+- Lexical and RegExp Grammars は `::`
+- Numeric String Grammar は `:::`
+
+**用語**
+
+- chain production: 右辺に含まれる非終端記号が 1 つだけなもの(終端記号の数は問わない)
+- goal symbol: その文法によって一番最初に生成される非終端記号。CFG の文脈で start symbol (開始記号)と呼ばれてるもの相当。
+  - (おそらく bottom up parser からみたらそれは goal なので goal symbol と記載されていると思われる。)
+
+### 豆知識
+
+ecma262 の 5.1.1 の Context-Free Grammars の文章について、`chain production` 以外はどうやら Java の仕様書のコピペ。
+
+- [ecma262](https://tc39.es/ecma262/#sec-context-free-grammars)
+- [Java 18](https://docs.oracle.com/javase/specs/jls/se18/html/jls-2.html)
+- [Java 1.0](http://titanium.cs.berkeley.edu/doc/java-langspec-1.0/2.doc.html)
