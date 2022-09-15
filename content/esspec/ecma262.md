@@ -1,5 +1,5 @@
 ---
-tags: [ecma262, tc39]
+tags: [esspec/ecma262, esspec/tc39]
 ---
 
 # ecma262
