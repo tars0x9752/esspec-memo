@@ -11,3 +11,9 @@ ECMAScript のコードの文法に紐付いたアルゴリズムを記載する
 algorithm steps の中で `SDOの名称 of NonTerminalなParseNode` のようにして使われる。
 
 例えば `X of Y` と記載されていて `X` は Syntax-Directed Operation の名称で、`Y` はソースコード断片(非終端記号な Parse Node)なとき、その `Parse Node Y` に対して `Hoge` という Syntax-Directed Operation を適用する、というように読む。
+
+---
+
+**Todo:**
+
+- [ ] 例を書く

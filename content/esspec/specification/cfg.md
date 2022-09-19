@@ -17,7 +17,7 @@ ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の�
 
 大きく分けて Syntactic Grammar, Numeric String Grammar, Lexical and RegExp Grammars の 3 種類存在する。(また, Runtime Semantics 記述時の [[sdo]] の定義中でその 3 種類が使われる可能性もある)
 
-**分割記号の違い**
+**Punctuation の違い**
 
 - Syntactic Grammar は `:`
 - Lexical and RegExp Grammars は `::`
