@@ -1,5 +1,5 @@
 ---
-tags: [cfg, esspec/cfg, esspec/chain-production]
+tags: [cfg, esspec/cfg, esspec/chain-production, esspec/goal-symbol]
 ---
 
 # Context-Free Grammars
