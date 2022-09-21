@@ -15,7 +15,7 @@ tags: [cfg, esspec/cfg, esspec/chain-production, esspec/goal-symbol]
 
 ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の記述時に使われる。
 
-大きく分けて Syntactic Grammar, Numeric String Grammar, Lexical and RegExp Grammars の 3 種類存在する。(また, Runtime Semantics 記述時の [[sdo]] の定義中でその 3 種類が使われる可能性もある)
+大きく分けて Syntactic Grammar, Numeric String Grammar, Lexical and RegExp Grammars の 3 種類存在する。(また、[[sdo]] の定義中でその 3 種類が使われる可能性もある)
 
 **Punctuation の違い**
 
