@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=beccb54c-0d5e-4de2-a351-5916a983611b' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=9bc6b6b7-3f3f-40ea-b04a-62daccbcbed0' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -519,6 +519,42 @@
   
     
       
+      
+    
+
+
+
+  
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
+        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
+        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
+      </svg>
+      
+  
+    <a class='font-bold hover:underline truncate' title='Context-Free Grammars' href='esspec/specification/cfg.html'>
+      Context-Free Grammars
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+      
     
     
 
@@ -539,8 +575,8 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Context-Free Grammars' href='esspec/specification/cfg.html'>
-      Context-Free Grammars
+    <a class='hover:underline truncate' title='chain production' href='esspec/specification/cfg/chain-production.html'>
+      chain production
     </a>
     
       
@@ -550,6 +586,48 @@
     TODO: Use <details> to toggle visibility?
   -->
   
+    
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+      
+    
+    
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='goal symbol' href='esspec/specification/cfg/goal-symbol.html'>
+      goal symbol
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+  
+</div>
     
   
 </div>
@@ -770,39 +848,47 @@
       ECMAScript のコードの文法に紐付いたアルゴリズムを記載するときに使う仕様書上の概念。
     </p>
   
-    <p class='mb-3'>
-      生成規則とそれに対する algorithm steps を書いて定義される。
-    </p>
-  
-    <p class='mb-3'>
-      algorithm steps の中で <code class='py-0.5 px-0.5 bg-gray-100'>SDOの名称 of NonTerminalなParseNode</code> のようにして使われる。
-    </p>
-  
-    <p class='mb-3'>
-      例えば <code class='py-0.5 px-0.5 bg-gray-100'>X of Y</code> と記載されていて <code class='py-0.5 px-0.5 bg-gray-100'>X</code> は Syntax-Directed Operation の名称で、<code class='py-0.5 px-0.5 bg-gray-100'>Y</code> はソースコード断片(非終端記号な Parse Node)なとき、その <code class='py-0.5 px-0.5 bg-gray-100'>Parse Node Y</code> に対して <code class='py-0.5 px-0.5 bg-gray-100'>Hoge</code> という Syntax-Directed Operation を適用する、というように読む。
-    </p>
-  
     <hr class='mb-3' />
   
     <p class='mb-3'>
-      <strong>Todo:</strong>
+      production (生成規則) とそれに対する algorithm steps を書いて定義される。
     </p>
   
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          
-    <svg xmlns='http://www.w3.org/2000/svg' class='inline h-4 w-4 mb-1 text-gray-600 stroke-current' fill='none' viewBox='0 0 28 28'><desc>☐</desc><rect stroke-width='3' x='2' y='2' width='24' height='24' rx='3'></rect></svg>
-<span>
+    <p class='mb-3'>
+      algorithm steps の中で <code class='py-0.5 px-0.5 bg-gray-100'>名称 of NonTerminalParseNode</code> のようにして使われる。
+    </p>
   
-      例を書く
-    
-</span>
+    <p class='mb-3'>
+      例えば <code class='py-0.5 px-0.5 bg-gray-100'>X of Y</code> と記載されていて <code class='py-0.5 px-0.5 bg-gray-100'>X</code> は Syntax-Directed Operation の名称で、<code class='py-0.5 px-0.5 bg-gray-100'>Y</code> はソースコード断片(NonTerminal な ParseNode)なとき、その <code class='py-0.5 px-0.5 bg-gray-100'>Parse Node Y</code> に対して <code class='py-0.5 px-0.5 bg-gray-100'>Hoge</code> という Syntax-Directed Operation を適用する、というように読む。
+    </p>
+  <h2 id='chain-production' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>chain production</h2>
+    <p class='mb-3'>
+      明示的な定義がない場合を除き、<a href='esspec/specification/cfg/chain-production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>chain production</a> に関しては <strong>暗黙的に</strong> 右辺の唯一の NonTerminal に対して同じ Syntax-Directed Operation を適用するという定義が含まれる。
+    </p>
+  
+    <p class='mb-3'>
+      例:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='txt language-txt'>Syntax
 
-  
-        </li>
-      
-    </ul>
+  Hoge : Fuga
+
+  Fuga : SomeNonTerminal
+
+Runtime Semantics: SomeOperation
+
+  Fuga : SomeNonTerminal
+
+    1. Return null.</code></pre></div>
+    <p class='mb-3'>
+      のような定義があった場合、Runtime Semantics に <code class='py-0.5 px-0.5 bg-gray-100'>Hoge</code> に関しての定義は書かれていないが、chain production ルールによって暗黙的に下記定義が含まれる。
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='txt language-txt'>  Hoge : Fuga
+
+    1. Return SomeOperation of Fuga</code></pre></div>
+    <p class='mb-3'>
+      <strong>Memo:</strong> syntax 定義の production の右辺で or(改行) や <code class='py-0.5 px-0.5 bg-gray-100'>one of</code> などが使われている場合に chain production を見をとしがちなので注意。(詳細は <a href='esspec/specification/cfg/chain-production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>chain production</a> を参照。)
+    </p>
   
   <div class='flex items-center justify-center mt-2'>
   
@@ -851,6 +937,15 @@
       <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/syntax-directed-operations.html'>
         <!-- DoNotFormat -->
         #esspec/syntax-directed-operations
+        <!-- DoNotFormat -->
+      </a>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/chain-production.html'>
+        <!-- DoNotFormat -->
+        #esspec/chain-production
         <!-- DoNotFormat -->
       </a>
     
