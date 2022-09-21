@@ -21,7 +21,7 @@ StrDecimalLiteral :::
   - StrUnsignedDecimalLiteral
 ```
 
-上記の production は 3 つの or について全て NonTerminal は一つのみのため、それぞれ chain production になる。次のように 3 つの production に分解して考えると一目瞭然か。
+上記の production は 3 つの or について全て NonTerminal は一つのみのため、それぞれ chain production になる。次のように 3 つの production に分解して考えるとわかりやすい。
 
 ```txt
 StrDecimalLiteral ::: StrUnsignedDecimalLiteral
