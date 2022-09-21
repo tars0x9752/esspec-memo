@@ -1,5 +1,5 @@
 ---
-tags: [esspec/syntax-directed-operations]
+tags: [esspec/syntax-directed-operations, esspec/chain-production]
 ---
 
 # Syntax-Directed Operations

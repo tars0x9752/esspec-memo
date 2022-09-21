@@ -1,3 +1,7 @@
+---
+tags: [esspec/chain-production, esspec/cfg]
+---
+
 # chain production
 
 右辺に含まれる非終端記号が 1 つだけなもの(終端記号の数は問わない)
