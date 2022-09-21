@@ -23,11 +23,15 @@ ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の�
 - Lexical and RegExp Grammars は `::`
 - Numeric String Grammar は `:::`
 
-**用語**
+### terms/words
 
-- chain production: 右辺に含まれる非終端記号が 1 つだけなもの(終端記号の数は問わない)
-- goal symbol: その文法によって一番最初に生成される非終端記号。CFG の文脈で start symbol (開始記号)と呼ばれてるもの相当。
-  - (おそらく bottom up parser からみたらそれは goal なので goal symbol と記載されていると思われる。)
+#### chain production
+
+![[chain-production]]
+
+#### goal symbol
+
+![[goal-symbol]]
 
 ### 豆知識
 
