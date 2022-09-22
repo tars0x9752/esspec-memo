@@ -42,4 +42,4 @@ Runtime Semantics: SomeOperation
     1. Return SomeOperation of Fuga
 ```
 
-**Memo:** syntax 定義の production の右辺で or(改行) や `one of` などが使われている場合に chain production を見をとしがちなので注意。(詳細は [[chain-production]] を参照。)
+**Memo:** production の右辺で or(改行) や `one of` あるいはその他のショートハンドなどが使われている場合に chain production を見をとしがちなので注意。(詳細は [[chain-production]] を参照。)

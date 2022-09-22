@@ -13,7 +13,7 @@ matrix に公式チャンネルがあり、delegates ではなくても参加で
 
 https://github.com/tc39/how-we-work/blob/main/matrix-guide.md
 
-何か質問があったら beginners チャンネル等に投げてみると誰か答えてくれるかも。
+何か質問があったら beginners チャンネルあたりに投げてみると誰か答えてくれるかも。
 
 過疎ってるように見えるかもしれないが、自分の経験上質問したら24時間以内くらいには返してくれる。(たぶん)
 
