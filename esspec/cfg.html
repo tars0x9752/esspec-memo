@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=c81cacc5-06c7-4c31-bb37-0d1f8f95d46c' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=04684589-3bae-4883-8b7d-1d7c23c04063' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -852,11 +852,15 @@
   <div>
     
     <p class='mb-3'>
-      右辺に含まれる非終端記号が 1 つだけなもの(終端記号の数は問わない)
+      右辺に含まれる非終端記号(NonTerminal)が 1 つだけな production のこと。(終端記号の数は問わない)
     </p>
-  <h3 id='memo' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>memo</h3>
+  
     <p class='mb-3'>
-      右辺に <strong>or</strong> (つまり改行または <code class='py-0.5 px-0.5 bg-gray-100'>one of</code> など)が使われている場合、そのうち NonTerminal が 1 個のみなケースは chain production になる。
+      (production を可能な限り因数分解した上で非終端記号の数を数えること。)
+    </p>
+  <h3 id='note' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Note</h3>
+    <p class='mb-3'>
+      右辺に <strong>or</strong> (つまり改行または <code class='py-0.5 px-0.5 bg-gray-100'>one of</code> など)、あるいは opt などなんらかのショートハンドが使われている場合、可能な限り因数分解した上で判断する。
     </p>
   
     <p class='mb-3'>
@@ -869,7 +873,11 @@ StrDecimalLiteral :::
   + StrUnsignedDecimalLiteral
   - StrUnsignedDecimalLiteral</code></pre></div>
     <p class='mb-3'>
-      上記の production は 3 つの or について全て NonTerminal は一つのみのため、それぞれ chain production になる。次のように 3 つの production に分解して考えるとわかりやすい。
+      上記の production はパッと見だと右辺に 3 つの NonTerminal があるので chain production ではないように見えるかもしれないが、そうではない。
+    </p>
+  
+    <p class='mb-3'>
+      実際は下記のように因数分解できるため、 3 つの別々の chain production が上記の定義には含まれている。
     </p>
   <div class='py-0.5 mb-3 text-sm'><pre><code class='txt language-txt'>StrDecimalLiteral ::: StrUnsignedDecimalLiteral
 
@@ -877,7 +885,7 @@ StrDecimalLiteral ::: + StrUnsignedDecimalLiteral
 
 StrDecimalLiteral ::: - StrUnsignedDecimalLiteral</code></pre></div>
     <p class='mb-3'>
-      また、他にも opt 等、 production にはいろいろショートハンドがあるので chain production になるものを見落としがちなことに要注意。
+      また、改行だけでなく他にも opt 等、 production にはいろいろショートハンドがあるので chain production になるものを見落としがちなことに要注意。
     </p>
   
   </div>
