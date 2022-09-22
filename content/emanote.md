@@ -4,9 +4,9 @@ order: 999
 
 # emanote
 
-[リポジトリ](https://github.com/EmaApps/emanote)
+[公式リポジトリ](https://github.com/EmaApps/emanote)
 
-[ドキュメント](https://emanote.srid.ca/)
+[公式ドキュメント](https://emanote.srid.ca/)
 
 
 ```query
