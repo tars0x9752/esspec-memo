@@ -12,8 +12,6 @@
 		// "mushan.vscode-paste-image",
 		// "sean10.markless-sean10",
 		// "gruntfuggly.todo-tree",
-
-		// ----- REQUIRED FOR THE "Emanote Live Server" TASK -----
-		"bbenoist.nix"
+		// "bbenoist.nix"
 	]
 }
