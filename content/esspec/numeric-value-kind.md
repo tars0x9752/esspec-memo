@@ -1,6 +1,4 @@
-# Numeric Type
-
-**仕様中に登場する数値の種類:**
+# 仕様中に登場する数値の種類
 
 - Mathematical values: Arbitrary real numbers, used as the default numeric type.
 - Extended mathematical values: Mathematical values together with +∞ and -∞.
