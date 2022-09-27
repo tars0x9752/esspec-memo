@@ -61,3 +61,9 @@ Record values
 Enums
 
 [enum-specification-type](https://tc39.es/ecma262/#sec-enum-specification-type)
+
+## bold
+
+ECMAScript language values
+
+[value-notation](https://tc39.es/ecma262/#sec-value-notation)
