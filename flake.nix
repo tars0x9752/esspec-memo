@@ -20,8 +20,8 @@
           # By default, the 'emanote' flake input is used.
           # package = inputs.emanote.packages.${system}.default;
           sites."default" = {
-            path = ./content;
-            pathString = "./content";
+            layers = [ ./content ];
+            layersString = [ "./content" ];
             port = 8080;
             baseUrl = "/esspec-memo/";
           };
