@@ -9,7 +9,7 @@
   </title>
   
     
-      <meta property='og:description' content='Runtime Semantics' />
+      <meta property='og:description' content='ecma262 - Runtime Semantics' />
       <meta property='og:site_name' content='esspec-memo' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=4fcd1a46-1611-43fd-a8bd-2e5bd118ba71' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=33386d97-efa3-4d13-b3af-a4c2a392ce85' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -695,42 +695,6 @@
   
     
       
-      
-    
-
-
-
-  
-  
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
-        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
-        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
-      </svg>
-      
-  
-    <a class='font-bold hover:underline truncate' title='Static Semantics' href='esspec/ss.html'>
-      Static Semantics
-    </a>
-    
-      
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-      
     
     
 
@@ -751,8 +715,8 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='MV' href='esspec/ss/ss-mv.html'>
-      MV
+    <a class='hover:underline truncate' title='Static Semantics' href='esspec/ss.html'>
+      Static Semantics
     </a>
     
       
@@ -762,9 +726,6 @@
     TODO: Use <details> to toggle visibility?
   -->
   
-    
-  
-</div>
     
   
 </div>
@@ -1139,7 +1100,7 @@
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      <a href='https://tc39.es/ecma262/#sec-runtime-semantics' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Runtime Semantics</a>
+      <a href='https://tc39.es/ecma262/#sec-runtime-semantics' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ecma262 - Runtime Semantics</a>
     </p>
   
     <p class='mb-3'>
@@ -1149,11 +1110,15 @@
     <p class='mb-3'>
       略称は <code class='py-0.5 px-0.5 bg-gray-100'>RS</code>
     </p>
-  
+  <div class='px-3 py-1 rounded shadow bg-yellow-100 mx-2 scale-95 hover:scale-100 hover:border-yellow-400 hover:shadow-lg border-t-8 border-yellow-200 mb-8 mt-8'>
     <p class='mb-3'>
-      とりあえずアルゴリズム名の接頭辞に <code class='py-0.5 px-0.5 bg-gray-100'>Runtime Semantics:</code> とついていたら、Runtime でしか呼ばれないアルゴリズムなんだなと思っておけばおｋ。
+      <strong>TL;DR:</strong>
     </p>
   
+    <p class='mb-3'>
+      アルゴリズム名の接頭辞に <code class='py-0.5 px-0.5 bg-gray-100'>Runtime Semantics:</code> とついていたら、Runtime でしか呼ばれないアルゴリズムだと考えればよい。
+    </p>
+  </div>
     <p class='mb-3'>
       関連: <a href='esspec/ss.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Static Semantics</a>
     </p>
@@ -1186,7 +1151,7 @@
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p><a href='esspec/rs.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Runtime Semantics</a> とは対象的に、こちらは Runtime ではなくコードの静的な解析とかに関連するアルゴリズムと覚えておけばおｋ。</p></div>
+      <div><p>関連: <a href='esspec/rs.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Runtime Semantics</a></p></div>
     </div>
   
 </div>
