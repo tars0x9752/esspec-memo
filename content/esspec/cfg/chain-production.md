@@ -6,11 +6,11 @@ tags: [esspec/chain-production, esspec/cfg]
 
 右辺に含まれる非終端記号(NonTerminal)が 1 つだけな production のこと。(終端記号の数は問わない)
 
-(production を可能な限り因数分解した上で非終端記号の数を数えること。)
+(可能な限りショートハンドを展開した上で非終端記号の数を数えること。)
 
 ### Note
 
-右辺に **or** (つまり改行または `one of` など)、あるいは opt などなんらかのショートハンドが使われている場合、可能な限り因数分解した上で判断する。
+右辺に **or** (つまり改行または `one of` など)、あるいは opt などなんらかのショートハンドが使われている場合、可能な限りショートハンドを展開上で判断する。
 
 例:
 
@@ -23,9 +23,7 @@ StrDecimalLiteral :::
   - StrUnsignedDecimalLiteral
 ```
 
-上記の production はパッと見だと右辺に 3 つの NonTerminal があるので chain production ではないように見えるかもしれないが、そうではない。
-
-実際は下記のように因数分解できるため、 3 つの別々の chain production が上記の定義には含まれている。
+上記の production はパッと見だと右辺に 3 つの NonTerminal があるので chain production ではないように見えるかもしれないが、実際は下記のようにショートハンドを展開できるため、 3 つの別々の chain production が上記の定義には含まれている。
 
 ```txt
 StrDecimalLiteral ::: StrUnsignedDecimalLiteral
