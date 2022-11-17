@@ -1,5 +1,6 @@
 ---
 tags: [cfg, esspec/cfg, esspec/chain-production, esspec/goal-symbol]
+order: -998
 ---
 
 # Context-Free Grammars

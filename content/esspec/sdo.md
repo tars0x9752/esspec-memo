@@ -1,5 +1,6 @@
 ---
 tags: [esspec/syntax-directed-operations, esspec/chain-production]
+order: -996
 ---
 
 # Syntax-Directed Operations
