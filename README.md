@@ -1,6 +1,6 @@
 # esspec-memo
 
-wip
+My personal notes about esspec
 
 ## dev
 
