@@ -12,7 +12,7 @@ order: -998
 - 終端記号(Terminal symbol): それ以上分解できないもの。
 - 非終端記号(NonTerminal symbol): 非終端記号と終端記号の任意の組み合わせで定義されるもの。構文変数。
 
-### ecma262 and CFG
+## ecma262 and CFG
 
 ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の記述時に使われる。
 
@@ -24,17 +24,12 @@ ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の�
 - Lexical and RegExp Grammars は `::`
 - Numeric String Grammar は `:::`
 
-### terms/words
+## terms/words
 
-#### chain production
+- [[chain-production]]
+- [[goal-symbol]]
 
-![[chain-production]]
-
-#### goal symbol
-
-![[goal-symbol]]
-
-### 豆知識
+## 豆知識
 
 ecma262 の 5.1.1 の Context-Free Grammars の文章について、`chain production` 以外はどうやら Java の仕様書のコピペ。
 
