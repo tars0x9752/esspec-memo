@@ -5,15 +5,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Mathematical Operations – esspec-memo
+    Abstract Operations – esspec-memo
   </title>
   
     
-      <meta property='og:description' content='ecma262 - Mathematical Operations' />
+      <meta property='og:description' content='汎用的なアルゴリズム断片を関数形式にして使い回せるようにした仕様書上の概念。アルゴリズム定義に使われる。' />
       <meta property='og:site_name' content='esspec-memo' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Mathematical Operations' />
+      <meta property='og:title' content='Abstract Operations' />
     
     
       <base href='/esspec-memo/' />
@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=bf43d4ec-30f6-4eb2-97cb-308c587f1d49' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=6c565b5f-8bef-4cae-963f-5bc620f0ca03' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -204,6 +204,15 @@
             <li class='inline-flex items-center'>
               <a class='px-1 font-bold' href='esspec.html'>
                 esspec
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href='esspec/algorithm.html'>
+                アルゴリズム関連
               </a>
               <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
                 <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
@@ -395,7 +404,7 @@
 
 
   
-
+  
 
 <!-- Rendering of this tree -->
 <div class='pl-2'>
@@ -403,18 +412,20 @@
   <div class='flex items-center my-2 space-x-2 justify-left'>
     
     
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
       </svg>
     
   
-    <a class='hover:underline truncate' title='頻出の記号/記法など' href='esspec/common-symbols-and-notations.html'>
-      頻出の記号/記法など
+    <a class='hover:underline truncate' title='お役立ち' href='esspec/helpful-notes.html'>
+      お役立ち
     </a>
     
       
-        
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
     
   </div>
 
@@ -445,13 +456,13 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Context-Free Grammars' href='esspec/cfg.html'>
-      Context-Free Grammars
+    <a class='hover:underline truncate' title='記法関連' href='esspec/notation.html'>
+      記法関連
     </a>
     
       
-        <span class='text-gray-300' title='2 children inside'>
-          2
+        <span class='text-gray-300' title='1 children inside'>
+          1
         </span>
       
     
@@ -466,8 +477,42 @@
       <!-- Variable bindings for this tree-->
   
     
+      
+      
+    
+
+
+
+  
   
 
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
+        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
+        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
+      </svg>
+      
+  
+    <a class='font-bold hover:underline truncate' title='アルゴリズム関連' href='esspec/algorithm.html'>
+      アルゴリズム関連
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+      <!-- Variable bindings for this tree-->
+  
+  
 
 
   
@@ -480,23 +525,23 @@
     
     
       <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
         </path>
       </svg>
-    
+      
   
-    <a class='hover:underline truncate' title='Abstract Operations' href='esspec/ao.html'>
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Abstract Operations' href='esspec/algorithm/ao.html'>
       Abstract Operations
     </a>
     
       
-        
-    
   </div>
 
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
+  
+    
   
 </div>
     
@@ -522,7 +567,7 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Syntax-Directed Operations' href='esspec/sdo.html'>
+    <a class='hover:underline truncate' title='Syntax-Directed Operations' href='esspec/algorithm/sdo.html'>
       Syntax-Directed Operations
     </a>
     
@@ -559,7 +604,7 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Runtime Semantics' href='esspec/rs.html'>
+    <a class='hover:underline truncate' title='Runtime Semantics' href='esspec/algorithm/rs.html'>
       Runtime Semantics
     </a>
     
@@ -596,7 +641,7 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Static Semantics' href='esspec/ss.html'>
+    <a class='hover:underline truncate' title='Static Semantics' href='esspec/algorithm/ss.html'>
       Static Semantics
     </a>
     
@@ -613,7 +658,9 @@
     
       <!-- Variable bindings for this tree-->
   
+    
   
+
 
 
   
@@ -626,22 +673,25 @@
     
     
       <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
         </path>
       </svg>
-      
+    
   
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Mathematical Operations' href='esspec/mo.html'>
+    <a class='hover:underline truncate' title='Mathematical Operations' href='esspec/algorithm/mo.html'>
       Mathematical Operations
     </a>
     
       
+        
+    
   </div>
 
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
   
+</div>
     
   
 </div>
@@ -736,223 +786,46 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Mathematical Operations
+    Abstract Operations
   </a>
 </h1>
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   <!-- デフォルトの pandoc.tpl を上書きする --><!-- https://github.com/EmaApps/emanote/blob/master/default/templates/components/pandoc.tpl -->
     <p class='mb-3'>
-      <a href='https://tc39.es/ecma262/#sec-mathematical-operations' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ecma262 - Mathematical Operations</a>
-    </p>
-  <h2 id='仕様書中に登場する数値の種類' class='mt-8 mb-4 text-4xl text-gray-800 border-b-2 inline-block'>仕様書中に登場する数値の種類</h2>
-    <p class='mb-3'>
-      仕様書中に登場する数値は大きく分けて次の4種類に分類される。
-    </p>
-  <h3 id='mathematical-values' class='mt-8 mb-2 text-3xl text-gray-800'><strong>Mathematical values</strong></h3>
-    <p class='mb-3'>
-      任意の実数。仕様書中の数値型のデフォルトがこれ。実世界のコンピューターでは任意の実数全てを正確に表現でき<strong>ない</strong>ことに注意。あくまで仕様書上の概念。
+      汎用的なアルゴリズム断片を関数形式にして使い回せるようにした仕様書上の概念。アルゴリズム定義に使われる。
     </p>
   
     <p class='mb-3'>
-      よく <code class='py-0.5 px-0.5 bg-gray-100'>MV</code> 等と略される。
+      あくまで仕様書上のみの概念で実際の ECMAScript 言語の関数ではないが、仕様書上では関数ライクに振る舞い、任意の引数と返り値を持つ。
     </p>
   
-    <p class='mb-3'>
-      仕様書中に登場する <code class='py-0.5 px-0.5 bg-gray-100'>integer</code> という単語は何か特別に明示されない限りは <code class='py-0.5 px-0.5 bg-gray-100'>MV</code> における整数である。(その場合 <code class='py-0.5 px-0.5 bg-gray-100'>integer</code> は <code class='py-0.5 px-0.5 bg-gray-100'>Number</code> や <code class='py-0.5 px-0.5 bg-gray-100'>BigInt</code> ではない。)
-    </p>
-  <h3 id='extended-mathematical-values' class='mt-8 mb-2 text-3xl text-gray-800'><strong>Extended mathematical values</strong></h3>
-    <p class='mb-3'>
-      <span class='math inline'>\(+\infty\)</span>, <span class='math inline'>\(-\infty\)</span> を含めた <code class='py-0.5 px-0.5 bg-gray-100'>Mathematical values</code>
-    </p>
-  <h3 id='numbers' class='mt-8 mb-2 text-3xl text-gray-800'><strong>Numbers</strong></h3>
-    <p class='mb-3'>
-      <a href='https://ja.wikipedia.org/wiki/IEEE_754' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>IEEE 754-2019</a> <a href='https://ja.wikipedia.org/wiki/%E5%80%8D%E7%B2%BE%E5%BA%A6%E6%B5%AE%E5%8B%95%E5%B0%8F%E6%95%B0%E7%82%B9%E6%95%B0' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>倍精度浮動小数点数</a> である <code class='py-0.5 px-0.5 bg-gray-100'>ECMAScript language values</code>
-    </p>
+    <hr class='mb-3' />
   
     <p class='mb-3'>
-      Tips:
+      <strong>Todo:</strong>
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          倍精度浮動小数点数における整数の最大値は <span class='math inline'>\(2^{53}-1\)</span>
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <code class='py-0.5 px-0.5 bg-gray-100'>Numbers.MAX_SAFE_INTEGER</code> でとれる。
-        </li>
-      
-    </ul>
+          
+    <svg xmlns='http://www.w3.org/2000/svg' class='inline h-4 w-4 mb-1 text-gray-600 stroke-current' fill='none' viewBox='0 0 28 28'><desc>☐</desc><rect stroke-width='3' x='2' y='2' width='24' height='24' rx='3'></rect></svg>
+<span>
   
-        </li>
-      
-        <li>
-          <code class='py-0.5 px-0.5 bg-gray-100'>NaN (Not-a-Number)</code> や <code class='py-0.5 px-0.5 bg-gray-100'>+0</code>, <code class='py-0.5 px-0.5 bg-gray-100'>-0</code>, <code class='py-0.5 px-0.5 bg-gray-100'>+∞</code>, <code class='py-0.5 px-0.5 bg-gray-100'>-∞</code> 等は JS 固有の概念ではなく IEEE 754-2019 で定義されているもの。
-        </li>
-      
-        <li>
-          勘違いしやすいが、<code class='py-0.5 px-0.5 bg-gray-100'>NaN (Not-a-Number)</code> も <code class='py-0.5 px-0.5 bg-gray-100'>Number</code> である。
-        </li>
-      
-    </ul>
-  <h3 id='bigints' class='mt-8 mb-2 text-3xl text-gray-800'><strong>BigInts</strong></h3>
-    <p class='mb-3'>
-      任意の整数を表現する <code class='py-0.5 px-0.5 bg-gray-100'>ECMAScript language values</code>
-    </p>
-  
-    <p class='mb-3'>
-      いわゆる多倍長整数。
-    </p>
-  <div class='px-3 py-1 rounded shadow bg-yellow-100 mx-2 scale-95 hover:scale-100 hover:border-yellow-400 hover:shadow-lg border-t-8 border-yellow-200 mb-8 mt-8'>
-    <p class='mb-3'>
-      <strong>TL;DR:</strong>
-    </p>
-  
-    <p class='mb-3'>
-      仕様書オンリーなのが <code class='py-0.5 px-0.5 bg-gray-100'>(Extended) Mathematical values</code>
-    </p>
-  
-    <p class='mb-3'>
-      実世界で取り回す場合は <code class='py-0.5 px-0.5 bg-gray-100'>Numbers</code> か <code class='py-0.5 px-0.5 bg-gray-100'>BigInts</code>
-    </p>
-  </div><h2 id='下付き文字' class='mt-8 mb-4 text-4xl text-gray-800 border-b-2 inline-block'>下付き文字</h2>
-    <p class='mb-3'>
-      仕様書中に登場する数値には次の下付き文字が付く。
-    </p>
-  
-    <p class='mb-3'>
-      また下付き文字なしの場合は <code class='py-0.5 px-0.5 bg-gray-100'>(Extended) Mathematical Values</code> を表す。(<code class='py-0.5 px-0.5 bg-gray-100'>NaN</code> を除く。<code class='py-0.5 px-0.5 bg-gray-100'>NaN</code> は下付き文字が何もつかないが <code class='py-0.5 px-0.5 bg-gray-100'>Number</code>)
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(_\mathbb{F}\)</span>: <code class='py-0.5 px-0.5 bg-gray-100'>Number</code>
-        </li>
-      
-        <li>
-          <span class='math inline'>\(_\mathbb{Z}\)</span>: <code class='py-0.5 px-0.5 bg-gray-100'>BigInt</code>
-        </li>
-      
-    </ul>
-  <h2 id='conversions' class='mt-8 mb-4 text-4xl text-gray-800 border-b-2 inline-block'>Conversions</h2>
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <code class='py-0.5 px-0.5 bg-gray-100'>Number</code> への変換
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(\mathbb{F}(x)\)</span>
-        </li>
-      
-        <li>
-          または <code class='py-0.5 px-0.5 bg-gray-100'>the Number value for x</code>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          <code class='py-0.5 px-0.5 bg-gray-100'>BigInt</code> への変換
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(\mathbb{Z}(x)\)</span>
-        </li>
-      
-        <li>
-          または <code class='py-0.5 px-0.5 bg-gray-100'>the BigInt value for x</code>
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          <code class='py-0.5 px-0.5 bg-gray-100'>Mathematical Values</code> への変換
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <span class='math inline'>\(\mathbb{R}(x)\)</span>
-        </li>
-      
-        <li>
-          または <code class='py-0.5 px-0.5 bg-gray-100'>the mathematical value of x</code>
-        </li>
-      
-        <li>
-          non finite な Number の <code class='py-0.5 px-0.5 bg-gray-100'>Mathematical Values</code> への変換は未定義。
-        </li>
-      
-        <li>
-          ちなみに <code class='py-0.5 px-0.5 bg-gray-100'>MV of</code> と記載される場合もあり、その場合の <code class='py-0.5 px-0.5 bg-gray-100'>MV</code> は <a href='esspec/ss.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Static Semantics</a> あるいは <a href='esspec/rs.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Runtime Semantics</a> 等として具体的なアルゴリズムがどこかに定義されている。
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-    </ul>
-  <h2 id='特殊な-number' class='mt-8 mb-4 text-4xl text-gray-800 border-b-2 inline-block'>特殊な Number</h2>
-    <p class='mb-3'>
-      特殊な Number について下記に補足する。
-    </p>
-  <h3 id='nan' class='mt-8 mb-2 text-3xl text-gray-800'><strong>NaN</strong></h3>
-    <p class='mb-3'>
-      IEEE 754-2019 倍精度浮動小数点数における NaN (Not-a-Number)
-    </p>
-  
-    <p class='mb-3'>
-      IEEE 754-2019 倍精度浮動小数点数においては指数部が <code class='py-0.5 px-0.5 bg-gray-100'>7FF0</code> で仮数部が <code class='py-0.5 px-0.5 bg-gray-100'>0</code> ではないものは全て <code class='py-0.5 px-0.5 bg-gray-100'>NaN</code> であり、つまり 2 進数的には <span class='math inline'>\(2^{53}-2\)</span> 種類の <code class='py-0.5 px-0.5 bg-gray-100'>NaN</code> があるが、ECMAScript においてそれらは区別されない。
-    </p>
-  
-    <p class='mb-3'>
-      また、区別はされないことに加えそれぞれが <code class='py-0.5 px-0.5 bg-gray-100'>equal</code> になることもない。
-    </p>
-  
-    <p class='mb-3'>
-      <code class='py-0.5 px-0.5 bg-gray-100'>NaN == NaN</code> や <code class='py-0.5 px-0.5 bg-gray-100'>NaN === NaN</code> は <code class='py-0.5 px-0.5 bg-gray-100'>false</code> である。
-    </p>
-  
-    <p class='mb-3'>
-      ただし、<code class='py-0.5 px-0.5 bg-gray-100'>SameValue</code> 判定ではそれぞれ同値として扱われ、例えば <code class='py-0.5 px-0.5 bg-gray-100'>Object.is(NaN, NaN)</code> 等は <code class='py-0.5 px-0.5 bg-gray-100'>true</code> である。
-    </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='sh language-sh'># 例
+      例を書く
+    
+</span>
 
-7FF0 0000 0000 0001 # NaN A
-7FF0 0000 0000 0002 # NaN B
-7FF0 0000 0000 0003 # NaN C
-
-# ここで、"NaN A", "NaN B", "NaN C" それぞれは2進数的には別の値だが、ECMAScript では区別されない。
-# 区別されないが equal でもないことに注意。</code></pre></div><h3 id='infinite' class='mt-8 mb-2 text-3xl text-gray-800'><strong>Infinite</strong></h3>
-    <p class='mb-3'>
-      <span class='math inline'>\(+\infty_\mathbb{F}\)</span> および <span class='math inline'>\(-\infty_\mathbb{F}\)</span>
-    </p>
   
-    <p class='mb-3'>
-      コード的には <code class='py-0.5 px-0.5 bg-gray-100'>+Infinity</code> <code class='py-0.5 px-0.5 bg-gray-100'>-Infinity</code> によってそれぞれ生成される。
-    </p>
-  <h3 id='finite' class='mt-8 mb-2 text-3xl text-gray-800'><strong>finite</strong></h3>
-    <p class='mb-3'>
-      <span class='math inline'>\(+\infty_\mathbb{F}\)</span>, <span class='math inline'>\(-\infty_\mathbb{F}\)</span> あるいは <code class='py-0.5 px-0.5 bg-gray-100'>NaN</code> ではない <code class='py-0.5 px-0.5 bg-gray-100'>Number</code> 型全てのことを <code class='py-0.5 px-0.5 bg-gray-100'>finite numbers</code> と呼ぶ。(文脈によっては <code class='py-0.5 px-0.5 bg-gray-100'>finite values</code> や <code class='py-0.5 px-0.5 bg-gray-100'>finite Number values</code>等と呼ばれることもある。)
-    </p>
-  <h3 id='not-finite-または-non-finite' class='mt-8 mb-2 text-3xl text-gray-800'><strong>not finite または non finite</strong></h3>
-    <p class='mb-3'>
-      <code class='py-0.5 px-0.5 bg-gray-100'>finite</code> ではない値は <code class='py-0.5 px-0.5 bg-gray-100'>not finite</code> や <code class='py-0.5 px-0.5 bg-gray-100'>non-finite</code> 等と呼ばれる。
-    </p>
-  
-    <p class='mb-3'>
-      具体的には <span class='math inline'>\(+\infty_\mathbb{F}\)</span>, <span class='math inline'>\(-\infty_\mathbb{F}\)</span>, <code class='py-0.5 px-0.5 bg-gray-100'>NaN</code> が <code class='py-0.5 px-0.5 bg-gray-100'>not finite</code> に該当する。
-    </p>
+        </li>
+      
+    </ul>
   
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/tars0x9752/esspec-memo/edit/main/content/esspec/mo.md'>
+      <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/tars0x9752/esspec-memo/edit/main/content/esspec/algorithm/ao.md'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -976,7 +849,7 @@
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><a href='esspec/mo.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Mathematical Operations</a></div>
+      <div><a href='esspec/algorithm/ao.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Abstract Operations</a></div>
     </div>
   
 </div>
@@ -989,6 +862,15 @@
             </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/abstract-operations.html'>
+        <!-- DoNotFormat -->
+        #esspec/abstract-operations
+        <!-- DoNotFormat -->
+      </a>
     
   </section>
 

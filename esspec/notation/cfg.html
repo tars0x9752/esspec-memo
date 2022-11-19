@@ -5,15 +5,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Syntax-Directed Operations – esspec-memo
+    Context-Free Grammars – esspec-memo
   </title>
   
     
-      <meta property='og:description' content='ECMAScript のコードの文法に紐付いたアルゴリズムを記載するときに使う仕様書上の概念。' />
+      <meta property='og:description' content='文脈自由文法' />
       <meta property='og:site_name' content='esspec-memo' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Syntax-Directed Operations' />
+      <meta property='og:title' content='Context-Free Grammars' />
     
     
       <base href='/esspec-memo/' />
@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=bf43d4ec-30f6-4eb2-97cb-308c587f1d49' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=6c565b5f-8bef-4cae-963f-5bc620f0ca03' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -204,6 +204,15 @@
             <li class='inline-flex items-center'>
               <a class='px-1 font-bold' href='esspec.html'>
                 esspec
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href='esspec/notation.html'>
+                記法関連
               </a>
               <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
                 <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
@@ -395,6 +404,113 @@
 
 
   
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='お役立ち' href='esspec/helpful-notes.html'>
+      お役立ち
+    </a>
+    
+      
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+      
+      
+    
+
+
+
+  
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
+        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
+        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
+      </svg>
+      
+  
+    <a class='font-bold hover:underline truncate' title='記法関連' href='esspec/notation.html'>
+      記法関連
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+      <!-- Variable bindings for this tree-->
+  
+  
+
+
+  
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
+        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
+        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
+      </svg>
+      
+  
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Context-Free Grammars' href='esspec/notation/cfg.html'>
+      Context-Free Grammars
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
 
 
 <!-- Rendering of this tree -->
@@ -409,8 +525,8 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='頻出の記号/記法など' href='esspec/common-symbols-and-notations.html'>
-      頻出の記号/記法など
+    <a class='hover:underline truncate' title='chain production' href='esspec/notation/cfg/chain-production.html'>
+      chain production
     </a>
     
       
@@ -421,6 +537,49 @@
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='goal symbol' href='esspec/notation/cfg/goal-symbol.html'>
+      goal symbol
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+  
+</div>
+    
   
 </div>
     
@@ -445,198 +604,15 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Context-Free Grammars' href='esspec/cfg.html'>
-      Context-Free Grammars
+    <a class='hover:underline truncate' title='アルゴリズム関連' href='esspec/algorithm.html'>
+      アルゴリズム関連
     </a>
     
       
-        <span class='text-gray-300' title='2 children inside'>
-          2
+        <span class='text-gray-300' title='5 children inside'>
+          5
         </span>
       
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Abstract Operations' href='esspec/ao.html'>
-      Abstract Operations
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-  
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
-        </path>
-      </svg>
-      
-  
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Syntax-Directed Operations' href='esspec/sdo.html'>
-      Syntax-Directed Operations
-    </a>
-    
-      
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-    
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Runtime Semantics' href='esspec/rs.html'>
-      Runtime Semantics
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Static Semantics' href='esspec/ss.html'>
-      Static Semantics
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Mathematical Operations' href='esspec/mo.html'>
-      Mathematical Operations
-    </a>
-    
-      
-        
     
   </div>
 
@@ -736,62 +712,96 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Syntax-Directed Operations
+    Context-Free Grammars
   </a>
 </h1>
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   <!-- デフォルトの pandoc.tpl を上書きする --><!-- https://github.com/EmaApps/emanote/blob/master/default/templates/components/pandoc.tpl -->
     <p class='mb-3'>
-      ECMAScript のコードの文法に紐付いたアルゴリズムを記載するときに使う仕様書上の概念。
-    </p>
-  
-    <hr class='mb-3' />
-  
-    <p class='mb-3'>
-      production (生成規則) とそれに対する algorithm steps を書いて定義される。
+      文脈自由文法
     </p>
   
     <p class='mb-3'>
-      algorithm steps の中で <code class='py-0.5 px-0.5 bg-gray-100'>名称 of NonTerminalParseNode</code> のようにして使われる。
+      例: 「数字とは 0, 1, 2, …, のいずれかである」や「小数とは 符号, 数字の連続, 小数点, 数字の連続…」, のような文法の定義。その定義ひとつひとつを production (生成規則あるいは導出規則など) と呼ぶ。
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          終端記号(Terminal symbol): それ以上分解できないもの。
+        </li>
+      
+        <li>
+          非終端記号(NonTerminal symbol): 非終端記号と終端記号の任意の組み合わせで定義されるもの。構文変数。
+        </li>
+      
+    </ul>
+  <h2 id='ecma262-and-cfg' class='mt-8 mb-4 text-4xl text-gray-800 border-b-2 inline-block'>ecma262 and CFG</h2>
+    <p class='mb-3'>
+      ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の記述時に使われる。
     </p>
   
     <p class='mb-3'>
-      例えば <code class='py-0.5 px-0.5 bg-gray-100'>X of Y</code> と記載されていて <code class='py-0.5 px-0.5 bg-gray-100'>X</code> は Syntax-Directed Operation の名称で、<code class='py-0.5 px-0.5 bg-gray-100'>Y</code> はソースコード断片(NonTerminal な ParseNode)なとき、その <code class='py-0.5 px-0.5 bg-gray-100'>Parse Node Y</code> に対して <code class='py-0.5 px-0.5 bg-gray-100'>Hoge</code> という Syntax-Directed Operation を適用する、というように読む。
-    </p>
-  <h2 id='chain-production' class='mt-8 mb-4 text-4xl text-gray-800 border-b-2 inline-block'>chain production</h2>
-    <p class='mb-3'>
-      明示的な定義がない場合を除き、<a href='esspec/cfg/chain-production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>chain production</a> に関しては <strong>暗黙的に</strong> 右辺の唯一の NonTerminal に対して同じ Syntax-Directed Operation を適用するという定義が含まれる。
+      大きく分けて Syntactic Grammar, Numeric String Grammar, Lexical and RegExp Grammars の 3 種類存在する。(また、<a href='esspec/algorithm/sdo.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Syntax-Directed Operations</a> の定義中でその 3 種類が使われる可能性もある)
     </p>
   
     <p class='mb-3'>
-      例:
+      <strong>Punctuation の違い</strong>
     </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='txt language-txt'>Syntax
-
-  Hoge : Fuga
-
-  Fuga : SomeNonTerminal
-
-Runtime Semantics: SomeOperation
-
-  Fuga : SomeNonTerminal
-
-    1. Return null.</code></pre></div>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Syntactic Grammar は <code class='py-0.5 px-0.5 bg-gray-100'>:</code>
+        </li>
+      
+        <li>
+          Lexical and RegExp Grammars は <code class='py-0.5 px-0.5 bg-gray-100'>::</code>
+        </li>
+      
+        <li>
+          Numeric String Grammar は <code class='py-0.5 px-0.5 bg-gray-100'>:::</code>
+        </li>
+      
+    </ul>
+  <h2 id='termswords' class='mt-8 mb-4 text-4xl text-gray-800 border-b-2 inline-block'>terms/words</h2>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='esspec/notation/cfg/chain-production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>chain production</a>
+        </li>
+      
+        <li>
+          <a href='esspec/notation/cfg/goal-symbol.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>goal symbol</a>
+        </li>
+      
+    </ul>
+  <h2 id='豆知識' class='mt-8 mb-4 text-4xl text-gray-800 border-b-2 inline-block'>豆知識</h2>
     <p class='mb-3'>
-      のような定義があった場合、Runtime Semantics に <code class='py-0.5 px-0.5 bg-gray-100'>Hoge</code> に関しての定義は書かれていないが、chain production ルールによって暗黙的に下記定義が含まれる。
+      ecma262 の 5.1.1 の Context-Free Grammars の文章について、<code class='py-0.5 px-0.5 bg-gray-100'>chain production</code> 以外はどうやら Java の仕様書のコピペ。
     </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='txt language-txt'>  Hoge : Fuga
-
-    1. Return SomeOperation of Fuga</code></pre></div>
-    <p class='mb-3'>
-      <strong>Memo:</strong> production の右辺で or(改行) や <code class='py-0.5 px-0.5 bg-gray-100'>one of</code> あるいはその他のショートハンドなどが使われている場合に chain production を見をとしがちなので注意。(詳細は <a href='esspec/cfg/chain-production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>chain production</a> を参照。)
-    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://tc39.es/ecma262/#sec-context-free-grammars' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ecma262</a>
+        </li>
+      
+        <li>
+          <a href='https://docs.oracle.com/javase/specs/jls/se18/html/jls-2.html' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Java 18</a>
+        </li>
+      
+        <li>
+          <a href='http://titanium.cs.berkeley.edu/doc/java-langspec-1.0/2.doc.html' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Java 1.0</a>
+        </li>
+      
+    </ul>
   
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/tars0x9752/esspec-memo/edit/main/content/esspec/sdo.md'>
+      <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/tars0x9752/esspec-memo/edit/main/content/esspec/notation/cfg.md'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -808,14 +818,14 @@ Runtime Semantics: SomeOperation
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href=''>
-            Index
+          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='esspec/algorithm/ss.html'>
+            Static Semantics
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><a href='esspec/sdo.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Syntax-Directed Operations</a></div>
+      <div><p>主にコードの静的な解析関連で、例えばコードが ECMAScript として正しいかとか、コードを見てこれはこういう意味をもったコードだと判定したりといった Static な Semantics をもったアルゴリズムのこと。<a href='esspec/notation/cfg.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Context-Free Grammars</a> だけでは表現しきれないルールのために用いられる。</p></div>
     </div>
   
 </div>
@@ -823,14 +833,14 @@ Runtime Semantics: SomeOperation
         </li>
       
         <li>
-          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='esspec/cfg.html'>
-            Context-Free Grammars
+          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href=''>
+            Index
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p>大きく分けて Syntactic Grammar, Numeric String Grammar, Lexical and RegExp Grammars の 3 種類存在する。(また、<a href='esspec/sdo.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Syntax-Directed Operations</a> の定義中でその 3 種類が使われる可能性もある)</p></div>
+      <div><a href='esspec/notation/cfg.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Context-Free Grammars</a></div>
     </div>
   
 </div>
@@ -847,9 +857,18 @@ Runtime Semantics: SomeOperation
       <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
         Perhaps Emanote should inject tagMetas with urls.
       -->
-      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/syntax-directed-operations.html'>
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/cfg.html'>
         <!-- DoNotFormat -->
-        #esspec/syntax-directed-operations
+        #cfg
+        <!-- DoNotFormat -->
+      </a>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/cfg.html'>
+        <!-- DoNotFormat -->
+        #esspec/cfg
         <!-- DoNotFormat -->
       </a>
     
@@ -859,6 +878,15 @@ Runtime Semantics: SomeOperation
       <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/chain-production.html'>
         <!-- DoNotFormat -->
         #esspec/chain-production
+        <!-- DoNotFormat -->
+      </a>
+    
+      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
+        Perhaps Emanote should inject tagMetas with urls.
+      -->
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/goal-symbol.html'>
+        <!-- DoNotFormat -->
+        #esspec/goal-symbol
         <!-- DoNotFormat -->
       </a>
     

@@ -5,15 +5,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Context-Free Grammars – esspec-memo
+    Static Semantics – esspec-memo
   </title>
   
     
-      <meta property='og:description' content='文脈自由文法' />
+      <meta property='og:description' content='ecma262 - Static Semantics' />
       <meta property='og:site_name' content='esspec-memo' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Context-Free Grammars' />
+      <meta property='og:title' content='Static Semantics' />
     
     
       <base href='/esspec-memo/' />
@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=bf43d4ec-30f6-4eb2-97cb-308c587f1d49' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=6c565b5f-8bef-4cae-963f-5bc620f0ca03' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -204,6 +204,15 @@
             <li class='inline-flex items-center'>
               <a class='px-1 font-bold' href='esspec.html'>
                 esspec
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href='esspec/algorithm.html'>
+                アルゴリズム関連
               </a>
               <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
                 <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
@@ -395,7 +404,7 @@
 
 
   
-
+  
 
 <!-- Rendering of this tree -->
 <div class='pl-2'>
@@ -403,18 +412,20 @@
   <div class='flex items-center my-2 space-x-2 justify-left'>
     
     
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
       </svg>
     
   
-    <a class='hover:underline truncate' title='頻出の記号/記法など' href='esspec/common-symbols-and-notations.html'>
-      頻出の記号/記法など
+    <a class='hover:underline truncate' title='お役立ち' href='esspec/helpful-notes.html'>
+      お役立ち
     </a>
     
       
-        
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
     
   </div>
 
@@ -426,7 +437,50 @@
     
       <!-- Variable bindings for this tree-->
   
+    
   
+
+
+
+  
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='記法関連' href='esspec/notation.html'>
+      記法関連
+    </a>
+    
+      
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+      
+      
+    
+
 
 
   
@@ -444,8 +498,8 @@
       </svg>
       
   
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Context-Free Grammars' href='esspec/cfg.html'>
-      Context-Free Grammars
+    <a class='font-bold hover:underline truncate' title='アルゴリズム関連' href='esspec/algorithm.html'>
+      アルゴリズム関連
     </a>
     
       
@@ -478,84 +532,7 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='chain production' href='esspec/cfg/chain-production.html'>
-      chain production
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='goal symbol' href='esspec/cfg/goal-symbol.html'>
-      goal symbol
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Abstract Operations' href='esspec/ao.html'>
+    <a class='hover:underline truncate' title='Abstract Operations' href='esspec/algorithm/ao.html'>
       Abstract Operations
     </a>
     
@@ -592,7 +569,7 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Syntax-Directed Operations' href='esspec/sdo.html'>
+    <a class='hover:underline truncate' title='Syntax-Directed Operations' href='esspec/algorithm/sdo.html'>
       Syntax-Directed Operations
     </a>
     
@@ -629,7 +606,7 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Runtime Semantics' href='esspec/rs.html'>
+    <a class='hover:underline truncate' title='Runtime Semantics' href='esspec/algorithm/rs.html'>
       Runtime Semantics
     </a>
     
@@ -646,9 +623,7 @@
     
       <!-- Variable bindings for this tree-->
   
-    
   
-
 
 
   
@@ -661,23 +636,23 @@
     
     
       <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
         </path>
       </svg>
-    
+      
   
-    <a class='hover:underline truncate' title='Static Semantics' href='esspec/ss.html'>
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Static Semantics' href='esspec/algorithm/ss.html'>
       Static Semantics
     </a>
     
       
-        
-    
   </div>
 
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
+  
+    
   
 </div>
     
@@ -703,7 +678,7 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Mathematical Operations' href='esspec/mo.html'>
+    <a class='hover:underline truncate' title='Mathematical Operations' href='esspec/algorithm/mo.html'>
       Mathematical Operations
     </a>
     
@@ -715,6 +690,9 @@
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
+  
+</div>
+    
   
 </div>
     
@@ -808,143 +786,40 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Context-Free Grammars
+    Static Semantics
   </a>
 </h1>
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   <!-- デフォルトの pandoc.tpl を上書きする --><!-- https://github.com/EmaApps/emanote/blob/master/default/templates/components/pandoc.tpl -->
     <p class='mb-3'>
-      文脈自由文法
+      <a href='https://tc39.es/ecma262/#sec-static-semantic-rules' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ecma262 - Static Semantics</a>
     </p>
   
     <p class='mb-3'>
-      例: 「数字とは 0, 1, 2, …, のいずれかである」や「小数とは 符号, 数字の連続, 小数点, 数字の連続…」, のような文法の定義。その定義ひとつひとつを production (生成規則あるいは導出規則など) と呼ぶ。
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          終端記号(Terminal symbol): それ以上分解できないもの。
-        </li>
-      
-        <li>
-          非終端記号(NonTerminal symbol): 非終端記号と終端記号の任意の組み合わせで定義されるもの。構文変数。
-        </li>
-      
-    </ul>
-  <h3 id='ecma262-and-cfg' class='mt-8 mb-2 text-3xl text-gray-800'>ecma262 and CFG</h3>
-    <p class='mb-3'>
-      ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の記述時に使われる。
+      主にコードの静的な解析関連で、例えばコードが ECMAScript として正しいかとか、コードを見てこれはこういう意味をもったコードだと判定したりといった Static な Semantics をもったアルゴリズムのこと。<a href='esspec/notation/cfg.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Context-Free Grammars</a> だけでは表現しきれないルールのために用いられる。
     </p>
   
     <p class='mb-3'>
-      大きく分けて Syntactic Grammar, Numeric String Grammar, Lexical and RegExp Grammars の 3 種類存在する。(また、<a href='esspec/sdo.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Syntax-Directed Operations</a> の定義中でその 3 種類が使われる可能性もある)
+      略称は <code class='py-0.5 px-0.5 bg-gray-100'>SS</code>
+    </p>
+  <div class='px-3 py-1 rounded shadow bg-yellow-100 mx-2 scale-95 hover:scale-100 hover:border-yellow-400 hover:shadow-lg border-t-8 border-yellow-200 mb-8 mt-8'>
+    <p class='mb-3'>
+      <strong>TL;DR:</strong>
     </p>
   
     <p class='mb-3'>
-      <strong>Punctuation の違い</strong>
+      アルゴリズム名の接頭辞に <code class='py-0.5 px-0.5 bg-gray-100'>Static Semantics:</code> とついていたら Runtime ではなくコードの静的な解析とかに関連するアルゴリズムだと考えればよい。
     </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          Syntactic Grammar は <code class='py-0.5 px-0.5 bg-gray-100'>:</code>
-        </li>
-      
-        <li>
-          Lexical and RegExp Grammars は <code class='py-0.5 px-0.5 bg-gray-100'>::</code>
-        </li>
-      
-        <li>
-          Numeric String Grammar は <code class='py-0.5 px-0.5 bg-gray-100'>:::</code>
-        </li>
-      
-    </ul>
-  <h3 id='termswords' class='mt-8 mb-2 text-3xl text-gray-800'>terms/words</h3><h4 id='chain-production' class='mt-8 mb-2 text-2xl text-gray-800'>chain production</h4><section title='Embedded note' class='p-4 mx-2 mb-2 bg-white border-2 rounded-lg shadow-inner'>
-  <header class='flex items-center justify-center text-2xl italic bg-blue-50 rounded py-1 px-2 mb-3'>
-    <a href='esspec/cfg/chain-production.html'>
-      chain production
-    </a>
-  </header>
-  <div>
-    <!-- デフォルトの pandoc.tpl を上書きする --><!-- https://github.com/EmaApps/emanote/blob/master/default/templates/components/pandoc.tpl -->
-    <p class='mb-3'>
-      右辺に含まれる非終端記号(NonTerminal)が 1 つだけな production のこと。(終端記号の数は問わない)
-    </p>
-  
-    <p class='mb-3'>
-      (可能な限りショートハンドを展開した上で非終端記号の数を数えること。)
-    </p>
-  <h3 id='note' class='mt-8 mb-2 text-3xl text-gray-800'>Note</h3>
-    <p class='mb-3'>
-      右辺に <strong>or</strong> (つまり改行または <code class='py-0.5 px-0.5 bg-gray-100'>one of</code> など)、あるいは opt などなんらかのショートハンドが使われている場合、可能な限りショートハンドを展開した上で判断する。
-    </p>
-  
-    <p class='mb-3'>
-      例:
-    </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='txt language-txt'>// StrUnsignedDecimalLiteral は NonTerminal であるとする。
-
-StrDecimalLiteral :::
-  StrUnsignedDecimalLiteral
-  + StrUnsignedDecimalLiteral
-  - StrUnsignedDecimalLiteral</code></pre></div>
-    <p class='mb-3'>
-      上記の production はパッと見だと右辺に 3 つの NonTerminal があるので chain production ではないように見えるかもしれないが、実際は下記のようにショートハンドを展開できるため、 3 つの別々の chain production が上記の定義には含まれている。
-    </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='txt language-txt'>StrDecimalLiteral ::: StrUnsignedDecimalLiteral
-
-StrDecimalLiteral ::: + StrUnsignedDecimalLiteral
-
-StrDecimalLiteral ::: - StrUnsignedDecimalLiteral</code></pre></div>
-    <p class='mb-3'>
-      また、改行だけでなく他にも opt 等、 production にはいろいろショートハンドがあるので chain production になるものを見落としがちなことに要注意。
-    </p>
-  
   </div>
-</section><h4 id='goal-symbol' class='mt-8 mb-2 text-2xl text-gray-800'>goal symbol</h4><section title='Embedded note' class='p-4 mx-2 mb-2 bg-white border-2 rounded-lg shadow-inner'>
-  <header class='flex items-center justify-center text-2xl italic bg-blue-50 rounded py-1 px-2 mb-3'>
-    <a href='esspec/cfg/goal-symbol.html'>
-      goal symbol
-    </a>
-  </header>
-  <div>
-    <!-- デフォルトの pandoc.tpl を上書きする --><!-- https://github.com/EmaApps/emanote/blob/master/default/templates/components/pandoc.tpl -->
     <p class='mb-3'>
-      その文法によって一番最初に生成される非終端記号。CFG の文脈で start symbol (開始記号)と呼ばれてるもの相当。
+      関連: <a href='esspec/algorithm/rs.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Runtime Semantics</a>
     </p>
-  
-    <p class='mb-3'>
-      (おそらく bottom up parser からみたらそれは goal なので goal symbol と記載されていると思われる。)
-    </p>
-  
-  </div>
-</section><h3 id='豆知識' class='mt-8 mb-2 text-3xl text-gray-800'>豆知識</h3>
-    <p class='mb-3'>
-      ecma262 の 5.1.1 の Context-Free Grammars の文章について、<code class='py-0.5 px-0.5 bg-gray-100'>chain production</code> 以外はどうやら Java の仕様書のコピペ。
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <a href='https://tc39.es/ecma262/#sec-context-free-grammars' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ecma262</a>
-        </li>
-      
-        <li>
-          <a href='https://docs.oracle.com/javase/specs/jls/se18/html/jls-2.html' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Java 18</a>
-        </li>
-      
-        <li>
-          <a href='http://titanium.cs.berkeley.edu/doc/java-langspec-1.0/2.doc.html' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>Java 1.0</a>
-        </li>
-      
-    </ul>
   
   <div class='flex items-center justify-center mt-2'>
   
     
-      <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/tars0x9752/esspec-memo/edit/main/content/esspec/cfg.md'>
+      <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/tars0x9752/esspec-memo/edit/main/content/esspec/algorithm/ss.md'>
         <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
           <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
         </svg>
@@ -961,14 +836,29 @@ StrDecimalLiteral ::: - StrUnsignedDecimalLiteral</code></pre></div>
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='esspec/ss.html'>
-            Static Semantics
+          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='esspec/algorithm/rs.html'>
+            Runtime Semantics
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p>主にコードの静的な解析関連で、例えばコードが ECMAScript として正しいかとか、コードを見てこれはこういう意味をもったコードだと判定したりといった Static な Semantics をもったアルゴリズムのこと。<a href='esspec/cfg.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Context-Free Grammars</a> だけでは表現しきれないルールのために用いられる。</p></div>
+      <div><p>関連: <a href='esspec/algorithm/ss.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Static Semantics</a></p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='esspec/algorithm/mo.html'>
+            Mathematical Operations
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
+      <div>ちなみに <code>MV of</code> と記載される場合もあり、その場合の <code>MV</code> は <a href='esspec/algorithm/ss.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Static Semantics</a> あるいは <a href='esspec/algorithm/rs.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Runtime Semantics</a> 等として具体的なアルゴリズムがどこかに定義されている。</div>
     </div>
   
 </div>
@@ -983,7 +873,7 @@ StrDecimalLiteral ::: - StrUnsignedDecimalLiteral</code></pre></div>
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><a href='esspec/cfg.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Context-Free Grammars</a></div>
+      <div><a href='esspec/algorithm/ss.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Static Semantics</a></div>
     </div>
   
 </div>
@@ -1000,36 +890,9 @@ StrDecimalLiteral ::: - StrUnsignedDecimalLiteral</code></pre></div>
       <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
         Perhaps Emanote should inject tagMetas with urls.
       -->
-      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/cfg.html'>
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/static-semantics.html'>
         <!-- DoNotFormat -->
-        #cfg
-        <!-- DoNotFormat -->
-      </a>
-    
-      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
-        Perhaps Emanote should inject tagMetas with urls.
-      -->
-      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/cfg.html'>
-        <!-- DoNotFormat -->
-        #esspec/cfg
-        <!-- DoNotFormat -->
-      </a>
-    
-      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
-        Perhaps Emanote should inject tagMetas with urls.
-      -->
-      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/chain-production.html'>
-        <!-- DoNotFormat -->
-        #esspec/chain-production
-        <!-- DoNotFormat -->
-      </a>
-    
-      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
-        Perhaps Emanote should inject tagMetas with urls.
-      -->
-      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/esspec/goal-symbol.html'>
-        <!-- DoNotFormat -->
-        #esspec/goal-symbol
+        #esspec/static-semantics
         <!-- DoNotFormat -->
       </a>
     
