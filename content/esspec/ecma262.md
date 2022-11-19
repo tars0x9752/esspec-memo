@@ -17,3 +17,8 @@ https://github.com/tc39/how-we-work/blob/main/matrix-guide.md
 
 過疎ってるように見えるかもしれないが、自分の経験上質問したら24時間以内くらいには返してくれる。(たぶん)
 
+## discourse
+
+パブリックな公式 discourse もある。
+
+https://es.discourse.group/
