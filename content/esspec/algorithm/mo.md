@@ -6,7 +6,7 @@
 
 仕様書中に登場する数値は大きく分けて次の4種類に分類される。
 
-### **Mathematical values**
+### Mathematical values
 
 任意の実数。仕様書中の数値型のデフォルトがこれ。実世界のコンピューターでは任意の実数全てを正確に表現でき**ない**ことに注意。あくまで仕様書上の概念。
 
@@ -14,11 +14,11 @@
 
 仕様書中に登場する `integer` という単語は何か特別に明示されない限りは `MV` における整数である。(その場合 `integer` は `Number` や `BigInt` ではない。)
 
-### **Extended mathematical values**
+### Extended mathematical values
 
 $+\infty$, $-\infty$ を含めた `Mathematical values`
 
-### **Numbers**
+### Numbers
 
 [IEEE 754-2019](https://ja.wikipedia.org/wiki/IEEE_754) [倍精度浮動小数点数](https://ja.wikipedia.org/wiki/%E5%80%8D%E7%B2%BE%E5%BA%A6%E6%B5%AE%E5%8B%95%E5%B0%8F%E6%95%B0%E7%82%B9%E6%95%B0) である `ECMAScript language values`
 
@@ -29,7 +29,7 @@ Tips:
 - `NaN (Not-a-Number)` や `+0`, `-0`, `+∞`, `-∞` 等は JS 固有の概念ではなく IEEE 754-2019 で定義されているもの。
 - 勘違いしやすいが、`NaN (Not-a-Number)` も `Number` である。
 
-### **BigInts**
+### BigInts
 
 任意の整数を表現する `ECMAScript language values`
 
@@ -70,7 +70,7 @@ Tips:
 
 特殊な Number について下記に補足する。
 
-### **NaN**
+### NaN
 
 IEEE 754-2019 倍精度浮動小数点数における NaN (Not-a-Number)
 
@@ -93,17 +93,17 @@ IEEE 754-2019 倍精度浮動小数点数においては指数部が `7FF0` で�
 # 区別されないが equal でもないことに注意。
 ```
 
-### **Infinite**
+### Infinite
 
 $+\infty_\mathbb{F}$ および $-\infty_\mathbb{F}$
 
 コード的には `+Infinity` `-Infinity` によってそれぞれ生成される。
 
-### **finite**
+### finite
 
 $+\infty_\mathbb{F}$, $-\infty_\mathbb{F}$ あるいは `NaN` ではない `Number` 型全てのことを `finite numbers` と呼ぶ。(文脈によっては `finite values` や `finite Number values`等と呼ばれることもある。)
 
-### **not finite または non finite**
+### not finite または non finite
 
 `finite` ではない値は `not finite` や `non-finite` 等と呼ばれる。
 
