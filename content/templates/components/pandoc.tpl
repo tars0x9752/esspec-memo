@@ -100,7 +100,7 @@
   <Code class="py-0.5 px-0.5 bg-gray-100" />
   <Header>
     <h1 class="pb-2 mb-2 text-5xl text-center" />
-    <h2 class="mt-8 mb-4 text-4xl text-gray-800 border-b-2 inline-block" />
+    <h2 class="mt-8 mb-4 text-4xl text-gray-800 border-b-4 border-gray-200 inline-block" />
     <h3 class="mt-8 mb-2 text-3xl text-gray-800" />
     <h4 class="mt-8 mb-2 text-2xl text-gray-800" />
     <h5 class="mt-8 mb-2 text-xl text-gray-800" />
