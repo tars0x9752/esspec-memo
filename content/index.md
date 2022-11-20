@@ -1,27 +1,13 @@
-# Index
+# Home
 
-## 道しるべ
+[[whatisthis]]
+: まずはこちらを
 
-- [[whatisthis]]
+[Index](-/all)
+: ページ一覧
 
-#### お役立ち
+[Tag Index](-/tags)
+: タグ一覧
 
-- [[common-symbols-and-notations]]
-  
-#### 記法関連
-
-- [[cfg]]
-
-#### アルゴリズム関連
-
-- [[ao]]
-- [[sdo]]
-- [[ss]]
-- [[rs]]
-- [[mo]]
-
-#### Types
-
-- [[language-types]]
-- [[specification-types]]
-
+[Tasks](-/tasks)
+: タスク一覧 (Todo List)

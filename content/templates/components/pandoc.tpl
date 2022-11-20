@@ -71,7 +71,7 @@
   </Note:List>
 
   <BulletList>
-    <ul class="my-3 ml-6 space-y-1 list-disc">
+    <ul class="ml-6 space-y-1 list-disc">
       <BulletList:Items>
         <li>
           <BulletList:Item />
@@ -80,7 +80,7 @@
     </ul>
   </BulletList>
   <OrderedList>
-    <ul class="my-3 ml-6 space-y-1 list-decimal list-inside">
+    <ul class="ml-6 space-y-1 list-decimal list-inside">
       <OrderedList:Items>
         <li>
           <OrderedList:Item />
