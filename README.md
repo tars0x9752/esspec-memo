@@ -1,14 +1,12 @@
 # esspec-memo
 
-My personal notes about esspec
+My personal notes about esspec (built with Emanote)
 
 ## dev
 
 ### VSCode integration
 
-When opened in VSCode, the live server task will start automatically. (Nix and Flakes feature required)
-
-More details: [`.vscode`](.vscode)
+See: [`.vscode`](.vscode)
 
 ### cmd
 
@@ -16,7 +14,6 @@ To start the Emanote live server using Nix:
 
 ```sh
 # For VSCode, this is executed automatically by the live server task.
-# TIPS: It would be faster if you can use garnix cache: https://garnix.io/docs/caching
 nix run
 ```
 
@@ -24,12 +21,4 @@ To update Emanote version in flake.nix:
 
 ```sh
 nix flake lock --update-input emanote
-```
-
-To build the static website via Nix:
-
-```sh
-nix build -o ./result
-# Then test it:
-nix run nixpkgs#nodePackages.live-server -- ./result
 ```
