@@ -1,3 +1,7 @@
+---
+tags: [esspec/mathematical-operations, esspec/mathematical-value, esspec/number, esspec/bigint]
+---
+
 # Mathematical Operations
 
 [ecma262 - Mathematical Operations](https://tc39.es/ecma262/#sec-mathematical-operations)
