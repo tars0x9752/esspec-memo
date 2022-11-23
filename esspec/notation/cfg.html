@@ -9,7 +9,7 @@
   </title>
   
     
-      <meta property='og:description' content='文脈自由文法' />
+      <meta property='og:description' content='ecma262 - Context-Free Grammars' />
       <meta property='og:site_name' content='esspec-memo' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=b1ba8c5f-205b-4e66-8d79-9666d1518c3b' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=7ae27f6d-f12f-418f-ae98-a5e195adfa18' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -525,8 +525,8 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='chain production' href='esspec/notation/cfg/chain-production.html'>
-      chain production
+    <a class='hover:underline truncate' title='Production' href='esspec/notation/cfg/production.html'>
+      Production
     </a>
     
       
@@ -562,8 +562,45 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='goal symbol' href='esspec/notation/cfg/goal-symbol.html'>
-      goal symbol
+    <a class='hover:underline truncate' title='Chain production' href='esspec/notation/cfg/chain-production.html'>
+      Chain production
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Goal symbol' href='esspec/notation/cfg/goal-symbol.html'>
+      Goal symbol
     </a>
     
       
@@ -719,24 +756,20 @@
   <!-- What goes in this file will appear on top of note body-->
   <!-- デフォルトの pandoc.tpl を上書きする --><!-- https://github.com/EmaApps/emanote/blob/master/default/templates/components/pandoc.tpl -->
     <p class='mb-3'>
-      文脈自由文法
+      <a href='https://tc39.es/ecma262/#sec-context-free-grammars' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>ecma262 - Context-Free Grammars</a>
     </p>
   
     <p class='mb-3'>
-      例: 「数字とは 0, 1, 2, …, のいずれかである」や「小数とは 符号, 数字の連続, 小数点, 数字の連続…」, のような文法の定義。その定義ひとつひとつを production (生成規則あるいは導出規則など) と呼ぶ。
+      日本語では文脈自由文法などと呼ばれる。略称は CFG.
     </p>
   
-    <ul class='ml-6 space-y-1 list-disc'>
-      
-        <li>
-          終端記号(Terminal symbol): それ以上分解できないもの。
-        </li>
-      
-        <li>
-          非終端記号(NonTerminal symbol): 非終端記号と終端記号の任意の組み合わせで定義されるもの。構文変数。
-        </li>
-      
-    </ul>
+    <p class='mb-3'>
+      例: 「数字とは 0, 1, 2, …, のいずれかである」や「小数とは 符号, 数字の連続, 小数点, 数字の連続…」, のような文法の定義。その定義ひとつひとつを <a href='esspec/notation/cfg/production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Production</a> (生成規則) と呼ぶ。
+    </p>
+  
+    <p class='mb-3'>
+      → 関連: <a href='esspec/notation/cfg/production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Production</a>
+    </p>
   <h2 id='ecma262-and-cfg' class='mt-8 mb-4 text-4xl text-gray-800 border-b-4 border-gray-200 inline-block'>ecma262 and CFG</h2>
     <p class='mb-3'>
       ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の記述時に使われる。
@@ -745,35 +778,19 @@
     <p class='mb-3'>
       大きく分けて Syntactic Grammar, Numeric String Grammar, Lexical and RegExp Grammars の 3 種類存在する。(また、<a href='esspec/algorithm/sdo.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Syntax-Directed Operations</a> の定義中でその 3 種類が使われる可能性もある)
     </p>
-  
-    <p class='mb-3'>
-      <strong>Punctuation の違い</strong>
-    </p>
-  
-    <ul class='ml-6 space-y-1 list-disc'>
-      
-        <li>
-          Syntactic Grammar は <code class='py-0.5 px-0.5 bg-gray-100'>:</code>
-        </li>
-      
-        <li>
-          Lexical and RegExp Grammars は <code class='py-0.5 px-0.5 bg-gray-100'>::</code>
-        </li>
-      
-        <li>
-          Numeric String Grammar は <code class='py-0.5 px-0.5 bg-gray-100'>:::</code>
-        </li>
-      
-    </ul>
   <h2 id='termswords' class='mt-8 mb-4 text-4xl text-gray-800 border-b-4 border-gray-200 inline-block'>terms/words</h2>
     <ul class='ml-6 space-y-1 list-disc'>
       
         <li>
-          <a href='esspec/notation/cfg/chain-production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>chain production</a>
+          <a href='esspec/notation/cfg/production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Production</a>
         </li>
       
         <li>
-          <a href='esspec/notation/cfg/goal-symbol.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>goal symbol</a>
+          <a href='esspec/notation/cfg/chain-production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Chain production</a>
+        </li>
+      
+        <li>
+          <a href='esspec/notation/cfg/goal-symbol.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Goal symbol</a>
         </li>
       
     </ul>

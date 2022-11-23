@@ -5,15 +5,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    chain production – esspec-memo
+    Chain production – esspec-memo
   </title>
   
     
-      <meta property='og:description' content='右辺に含まれる非終端記号(NonTerminal)が 1 つだけな production のこと。(終端記号の数は問わない)' />
+      <meta property='og:description' content='右辺に含まれる非終端記号(NonTerminal)が 1 つだけな [[production]] のこと。(終端記号の数は問わない)' />
       <meta property='og:site_name' content='esspec-memo' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='chain production' />
+      <meta property='og:title' content='Chain production' />
     
     
       <base href='/esspec-memo/' />
@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=b1ba8c5f-205b-4e66-8d79-9666d1518c3b' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=7ae27f6d-f12f-418f-ae98-a5e195adfa18' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -518,6 +518,43 @@
     
       <!-- Variable bindings for this tree-->
   
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Production' href='esspec/notation/cfg/production.html'>
+      Production
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
   
 
 
@@ -536,8 +573,8 @@
       </svg>
       
   
-    <a class='font-bold text-blue-600 hover:underline truncate' title='chain production' href='esspec/notation/cfg/chain-production.html'>
-      chain production
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Chain production' href='esspec/notation/cfg/chain-production.html'>
+      Chain production
     </a>
     
       
@@ -573,8 +610,8 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='goal symbol' href='esspec/notation/cfg/goal-symbol.html'>
-      goal symbol
+    <a class='hover:underline truncate' title='Goal symbol' href='esspec/notation/cfg/goal-symbol.html'>
+      Goal symbol
     </a>
     
       
@@ -723,14 +760,14 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    chain production
+    Chain production
   </a>
 </h1>
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   <!-- デフォルトの pandoc.tpl を上書きする --><!-- https://github.com/EmaApps/emanote/blob/master/default/templates/components/pandoc.tpl -->
     <p class='mb-3'>
-      右辺に含まれる非終端記号(NonTerminal)が 1 つだけな production のこと。(終端記号の数は問わない)
+      右辺に含まれる非終端記号(NonTerminal)が 1 つだけな <a href='esspec/notation/cfg/production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Production</a> のこと。(終端記号の数は問わない)
     </p>
   
     <p class='mb-3'>
@@ -751,7 +788,7 @@ StrDecimalLiteral :::
   + StrUnsignedDecimalLiteral
   - StrUnsignedDecimalLiteral</code></pre></div>
     <p class='mb-3'>
-      上記の production はパッと見だと右辺に 3 つの NonTerminal があるので chain production ではないように見えるかもしれないが、実際は下記のようにショートハンドを展開できるため、 3 つの別々の chain production が上記の定義には含まれている。
+      上記の <a href='esspec/notation/cfg/production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Production</a> はパッと見だと右辺に 3 つの NonTerminal があるので chain production ではないように見えるかもしれないが、実際は下記のようにショートハンドを展開できるため、 3 つの別々の chain production が上記の定義には含まれている。
     </p>
   <div class='py-0.5 mb-3 text-sm'><pre><code class='txt language-txt'>StrDecimalLiteral ::: StrUnsignedDecimalLiteral
 
@@ -759,7 +796,7 @@ StrDecimalLiteral ::: + StrUnsignedDecimalLiteral
 
 StrDecimalLiteral ::: - StrUnsignedDecimalLiteral</code></pre></div>
     <p class='mb-3'>
-      また、改行だけでなく他にも opt 等、 production にはいろいろショートハンドがあるので chain production になるものを見落としがちなことに要注意。
+      また、改行だけでなく他にも opt 等、 <a href='esspec/notation/cfg/production.html' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Production</a> にはいろいろショートハンドがあるので chain production になるものを見落としがちなことに要注意。
     </p>
   
   <div class='flex items-center justify-center mt-2'>
@@ -789,11 +826,11 @@ StrDecimalLiteral ::: - StrUnsignedDecimalLiteral</code></pre></div>
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p>明示的な定義がない場合を除き、<a href='esspec/notation/cfg/chain-production.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>chain production</a> に関しては <strong>暗黙的に</strong> 右辺の唯一の NonTerminal に対して同じ Syntax-Directed Operation を適用するという定義が含まれる。</p></div>
+      <div><p>明示的な定義がない場合を除き、<a href='esspec/notation/cfg/chain-production.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Chain production</a> に関しては <strong>暗黙的に</strong> 右辺の唯一の NonTerminal に対して同じ Syntax-Directed Operation を適用するという定義が含まれる。</p></div>
     </div>
   
     <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p><strong>Memo:</strong> production の右辺で or(改行) や <code>one of</code> あるいはその他のショートハンドなどが使われている場合に chain production を見をとしがちなので注意。(詳細は <a href='esspec/notation/cfg/chain-production.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>chain production</a> を参照。)</p></div>
+      <div><p><strong>Memo:</strong> production の右辺で or(改行) や <code>one of</code> あるいはその他のショートハンドなどが使われている場合に chain production を見をとしがちなので注意。(詳細は <a href='esspec/notation/cfg/chain-production.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Chain production</a> を参照。)</p></div>
     </div>
   
 </div>
@@ -808,7 +845,7 @@ StrDecimalLiteral ::: - StrUnsignedDecimalLiteral</code></pre></div>
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><a href='esspec/notation/cfg/chain-production.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>chain production</a></div>
+      <div><a href='esspec/notation/cfg/chain-production.html' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Chain production</a></div>
     </div>
   
 </div>

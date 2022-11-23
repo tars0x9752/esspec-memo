@@ -9,7 +9,7 @@
   </title>
   
     
-      <meta property='og:description' content='汎用的なアルゴリズム断片を関数形式にして使い回せるようにした仕様書上の概念。アルゴリズム定義に使われる。' />
+      <meta property='og:description' content='汎用的なアルゴリズム断片を関数形式にして使い回せるようにした仕様書上の概念。アルゴリズム定義に使われる。抽象操作。' />
       <meta property='og:site_name' content='esspec-memo' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
@@ -47,7 +47,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=b1ba8c5f-205b-4e66-8d79-9666d1518c3b' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=7ae27f6d-f12f-418f-ae98-a5e195adfa18' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -793,11 +793,19 @@
   <!-- What goes in this file will appear on top of note body-->
   <!-- デフォルトの pandoc.tpl を上書きする --><!-- https://github.com/EmaApps/emanote/blob/master/default/templates/components/pandoc.tpl -->
     <p class='mb-3'>
-      汎用的なアルゴリズム断片を関数形式にして使い回せるようにした仕様書上の概念。アルゴリズム定義に使われる。
+      汎用的なアルゴリズム断片を関数形式にして使い回せるようにした仕様書上の概念。アルゴリズム定義に使われる。抽象操作。
     </p>
   
     <p class='mb-3'>
       あくまで仕様書上のみの概念で実際の ECMAScript 言語の関数ではないが、仕様書上では関数ライクに振る舞い、任意の引数と返り値を持つ。
+    </p>
+  
+    <p class='mb-3'>
+      なお、仕様書上のみの概念ではあるものの、JS による実装がライブラリとして公開されていたりする。(polyfill 作成時のリファレンスなどの役目か)
+    </p>
+  
+    <p class='mb-3'>
+      JS による実装: <a href='https://github.com/ljharb/es-abstract' class='text-blue-600 hover:underline' data-linkicon='external' target='_blank' rel='noopener'>https://github.com/ljharb/es-abstract</a>
     </p>
   
   <div class='flex items-center justify-center mt-2'>
