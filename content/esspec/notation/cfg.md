@@ -5,12 +5,13 @@ order: -998
 
 # Context-Free Grammars
 
-文脈自由文法
+[ecma262 - Context-Free Grammars](https://tc39.es/ecma262/#sec-context-free-grammars)
 
-例: 「数字とは 0, 1, 2, ..., のいずれかである」や「小数とは 符号, 数字の連続, 小数点, 数字の連続...」, のような文法の定義。その定義ひとつひとつを production (生成規則あるいは導出規則など) と呼ぶ。
+日本語では文脈自由文法などと呼ばれる。略称は CFG.
 
-- 終端記号(Terminal symbol): それ以上分解できないもの。
-- 非終端記号(NonTerminal symbol): 非終端記号と終端記号の任意の組み合わせで定義されるもの。構文変数。
+例: 「数字とは 0, 1, 2, ..., のいずれかである」や「小数とは 符号, 数字の連続, 小数点, 数字の連続...」, のような文法の定義。その定義ひとつひとつを [[production]] (生成規則) と呼ぶ。
+
+→ 関連: [[production]]
 
 ## ecma262 and CFG
 
@@ -18,14 +19,9 @@ ecma262 上では (E)BNF ライクな独自の記法が構文・字句文法の�
 
 大きく分けて Syntactic Grammar, Numeric String Grammar, Lexical and RegExp Grammars の 3 種類存在する。(また、[[sdo]] の定義中でその 3 種類が使われる可能性もある)
 
-**Punctuation の違い**
-
-- Syntactic Grammar は `:`
-- Lexical and RegExp Grammars は `::`
-- Numeric String Grammar は `:::`
-
 ## terms/words
 
+- [[production]]
 - [[chain-production]]
 - [[goal-symbol]]
 
